@@ -3,14 +3,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5339C36C-A524-44CE-93BD-59A79F57B346}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Mono.WebServer</RootNamespace>
     <AssemblyName>Mono.WebServer</AssemblyName>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\mono.snk</AssemblyOriginatorKeyFile>
+    <UseMSBuildEngine>False</UseMSBuildEngine>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,6 +61,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="ApplicationServer.cs" />
+    <Compile Include="AssemblyInfo.cs" />
     <Compile Include="BaseApplicationHost.cs" />
     <Compile Include="BaseRequestBroker.cs" />
     <Compile Include="EndOfRequestHandler.cs" />
@@ -99,7 +99,6 @@
     <Compile Include="WebTrace.cs" />
     <Compile Include="Log\FileLogger.cs" />
     <Compile Include="Log\ILogger.cs" />
-    <Compile Include="AssemblyInfo4.cs" />
     <Compile Include="IdentityToken.cs" />
     <Compile Include="Options\Settings\BoolSetting.cs" />
     <Compile Include="Options\Settings\Int32Setting.cs" />
@@ -116,7 +115,5 @@
     <Compile Include="Options\Settings\SettingSource.cs" />
     <Compile Include="Options\Settings\Parser.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Options\Settings\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

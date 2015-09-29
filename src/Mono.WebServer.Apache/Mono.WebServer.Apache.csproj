@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4F774362-208F-4C21-9668-9013BE0C5032}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Mono.WebServer.Apache</RootNamespace>
